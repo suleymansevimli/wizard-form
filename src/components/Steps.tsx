@@ -35,7 +35,7 @@ const Steps: React.FC<StepsProps> = ({ current = 1 }) => {
           <Text
             mt="8"
             textAlign="center"
-            color={index + 1 !== current ? "gray.400" : "gray.900"}
+            color={index + 1 > current ? "gray.400" : "gray.900"}
           >
             {step.title}
           </Text>
